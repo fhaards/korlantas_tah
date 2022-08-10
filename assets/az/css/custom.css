@@ -1,0 +1,255 @@
+#master-body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+
+#master-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#master-body::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+    border-radius: 10px;
+}
+
+#master-body::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+}
+
+
+.dashboard-page {
+    background: url("../../img/bg-beranda.jpeg")no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    height: 90vh;
+    z-index: 0;
+}
+
+.dashboard-page h1 {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.beranda-contents-head {
+    position: relative;
+    bottom: 30vh;
+    height: auto;
+}
+
+.beranda-contents-head .meda-body {
+    position: absolute;
+    bottom: 30vh;
+    width: 100%;
+    z-index: 1;
+}
+
+.page-title {
+    letter-spacing: 2px;
+}
+
+.page-title strong {
+    font-weight: 800;
+}
+
+/* SCROLL CONTENT */
+.content-scroll {
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.content-scroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.content-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.content-scroll::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+}
+
+.content-scroll::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+}
+
+path.leaflet-interactive.animate {
+    stroke-dasharray: 1920;
+    stroke-dashoffset: 1920;
+    animation: dash 10s linear 3s forwards;
+}
+
+.leaflet-tile-pane {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.footer-95942 {
+    /* padding: 7rem 0; */
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-95942 .nav-links li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-95942 .nav-links li a {
+    font-size: 14px;
+    color: #777;
+}
+
+.footer-95942 .nav-links li a:hover {
+    color: #4200ff;
+}
+
+.footer-95942 .social.app {
+    font-size: 13px;
+}
+
+.footer-95942 .social li {
+    display: inline-block;
+}
+
+.footer-95942 .social li a {
+    display: inline-block;
+    padding: 10px;
+    color: #ccc;
+}
+
+.footer-95942 .social li a:hover {
+    color: #4200ff;
+}
+
+.footer-95942 .social.nav-left li:first-child a {
+    padding-left: 0px;
+}
+
+.footer-95942 .social.nav-right li:last-child a {
+    padding-right: 0px;
+}
+
+.footer-95942 h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(90, 92, 105, 0.5);
+    line-height: 46px;
+    z-index: 999;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+    color: white;
+}
+
+.scroll-to-top:hover {
+    background: #5a5c69;
+}
+
+.scroll-to-top i {
+    font-weight: 800;
+}
+
+/* SPINNER LOADER */
+.loader::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    position: relative;
+    color: #2563eb;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+}
+
+@keyframes animloader {
+    0% {
+        box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+    }
+
+    25% {
+        box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 2px;
+    }
+
+    50% {
+        box-shadow: 14px 0 0 -2px, 38px 0 0 -2px, -14px 0 0 2px, -38px 0 0 -2px;
+    }
+
+    75% {
+        box-shadow: 14px 0 0 2px, 38px 0 0 -2px, -14px 0 0 -2px, -38px 0 0 -2px;
+    }
+
+    100% {
+        box-shadow: 14px 0 0 -2px, 38px 0 0 2px, -14px 0 0 -2px, -38px 0 0 -2px;
+    }
+}
+
+
+/* MAPING */
+
+#page-titik-rawan {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+#page-titik-rawan .detail-lokasi {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    z-index: 2;
+}
+
+@media (min-width: 768px) {
+    #page-titik-rawan .detail-lokasi {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        z-index: 2;
+    }
+}
+
+/* MODAL FULLSCREEN */
+
+.modal.modal-fullscreen .modal-dialog {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+.modal.modal-fullscreen .modal-content {
+    height: auto;
+    height: 100vh;
+    border-radius: 0;
+    border: none;
+}
+
+.modal.modal-fullscreen .modal-body {
+    overflow-y: auto;
+}
